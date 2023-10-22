@@ -8,11 +8,9 @@ function App () {
   const handleChange = (event) => {
     const newInputText = event.target.value
 
-    if (newInputText.startsWith(' ')) {
-      setInputValue(newInputText.trim())
-    } else {
-      setInputValue(newInputText)
-    }
+    newInputText.startsWith(' ')
+      ? setInputValue(newInputText.trim())
+      : setInputValue(newInputText)
   }
 
   const handleSubmit = (event) => {
@@ -42,7 +40,7 @@ function App () {
             placeholder='Write here...'
           />
           <span className='input-border input-border-alt' />
-          <button type='submit'>Generate cat meme</button>
+          <button type='submit'>Generate</button>
         </div>
       </form>
       <main>

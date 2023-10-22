@@ -22,9 +22,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #47C9FF;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -41,17 +43,16 @@ button:focus-visible {
   padding-inline: 0.5em;
   padding-block: 0.7em;
   border: none;
-  border-bottom: var(--border-height) solid var(--border-before-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
+
 .input::placeholder {
   color: #fff;
 }
 
 .input-border {
   position: absolute;
-  background: var(--border-after-color);
   width: 0%;
   height: 2px;
   bottom: 0;
